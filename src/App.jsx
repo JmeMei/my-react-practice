@@ -2,8 +2,8 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from './assets/vite.svg'
 // import heroImg from './assets/hero.png'
-import Welcome from './Welcome'
-import Button from './Button'
+import { Welcome } from './Welcome'
+import { Button } from './Button'
 import './App.css'
 
 function App() {
