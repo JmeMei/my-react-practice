@@ -8,6 +8,10 @@ function Welcome() {
   return <h2>Welcome, Jamie!</h2> 
 }
 
+function Button() {
+  return <button>Click Me</button>
+}
+
 function App() {
   // const [count, setCount] = useState(0)
 
@@ -15,6 +19,7 @@ function App() {
    <div>
      <h1>Codevolution React Course</h1>
       <Welcome />
+      <Button />
    </div>
   )
 }
