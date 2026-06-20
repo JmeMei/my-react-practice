@@ -4,12 +4,17 @@
 // import heroImg from './assets/hero.png'
 import './App.css'
 
+function Welcome() {
+  return <h2>Welcome, Jamie!</h2> 
+}
+
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
    <div>
      <h1>Codevolution React Course</h1>
+      <Welcome />
    </div>
   )
 }
