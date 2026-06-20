@@ -2,15 +2,9 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from './assets/vite.svg'
 // import heroImg from './assets/hero.png'
+import Welcome from './Welcome'
+import Button from './Button'
 import './App.css'
-
-function Welcome() {
-  return <h2>Welcome, Jamie!</h2> 
-}
-
-function Button() {
-  return <button>Click Me</button>
-}
 
 function App() {
   // const [count, setCount] = useState(0)
