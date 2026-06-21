@@ -6,6 +6,7 @@ import { Welcome } from "./Welcome";
 import { Button } from "./Button";
 import { CandidateProfile } from "./CandidateProfile";
 import { Product } from "./Product";
+import { Greeting } from "./Greeting";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,11 @@ function App() {
 
   return (
     <div>
+      <Greeting name="Bruce" message="Good morning" />
+      <Greeting name="Jamie" />
+      <Greeting name="Diana" />
+      <Greeting />
+
       <h1>Codevolution React Course</h1>
       <Welcome name="Bruce" alias="The Flash" />
       <Welcome name="Jamie" alias="The Hulk" />
