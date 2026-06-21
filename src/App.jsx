@@ -7,6 +7,7 @@ import { Button } from "./Button";
 import { CandidateProfile } from "./CandidateProfile";
 import { Product } from "./Product";
 import { Greeting } from "./Greeting";
+import { CardWrapper } from "./CardWrapper";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,12 @@ function App() {
 
   return (
     <div>
+      <CardWrapper title="User Profile">
+        <p>Bruce Wayne</p>
+        <p>batman@jl.com</p>
+        <button>Edit Profile</button>
+      </CardWrapper>
+
       <Greeting name="Bruce" message="Good morning" />
       <Greeting name="Jamie" />
       <Greeting name="Diana" />
