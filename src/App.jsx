@@ -4,6 +4,7 @@
 // import heroImg from './assets/hero.png'
 import { Welcome } from './Welcome'
 import { Button } from './Button'
+import {CandidateProfile} from './CandidateProfile'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
      <h1>Codevolution React Course</h1>
       <Welcome />
       <Button />
+      <CandidateProfile />
    </div>
   )
 }
