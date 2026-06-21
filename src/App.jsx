@@ -16,7 +16,12 @@ function App() {
 
   return (
     <div>
-      <UserDetails name="Bruce Wayne" isOnline={true} />
+      <UserDetails
+        name="Bruce Wayne"
+        isOnline={true}
+        isNewUser={true}
+        isPremium={true}
+      />
       <UserDetails name="Clark Kent" isOnline={false} hideOffline={false} />
 
       <CardWrapper title="User Profile">
