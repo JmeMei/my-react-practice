@@ -17,14 +17,18 @@ export const ProductList = () => {
     },
   ];
 
-  const productElements = products.map((product) => {
-    return (
-      <div>
-        <h3>{product.name}</h3>
-        <p>Price: ${product.price}</p>
-      </div>
-    );
-  });
+  const productElements = products
+    .filter((product) => {
+      return product.price > 500;
+    })
+    .map((product) => {
+      return (
+        <div>
+          <h3>{product.name}</h3>
+          <p>Price: ${product.price}</p>
+        </div>
+      );
+    });
 
   return (
     <div>
