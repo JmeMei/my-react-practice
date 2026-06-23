@@ -1,3 +1,5 @@
+import React from "react";
+
 export const ProductList = () => {
   const products = [
     {
@@ -23,10 +25,12 @@ export const ProductList = () => {
     })
     .map((product) => {
       return (
-        <div key={product.id}>
-          <h3>{product.name}</h3>
-          <p>Price: ${product.price}</p>
-        </div>
+        <React.Fragment key={product.id}>
+          <div key={product.id}>
+            <h3>{product.name}</h3>
+            <p>Price: ${product.price}</p>
+          </div>
+        </React.Fragment>
       );
     });
 
