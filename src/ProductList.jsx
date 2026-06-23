@@ -1,19 +1,33 @@
 export const ProductList = () => {
+  const products = [
+    {
+      id: 1,
+      name: "Laptop",
+      price: 999,
+    },
+    {
+      id: 2,
+      name: "Phone",
+      price: 699,
+    },
+    {
+      id: 3,
+      name: "Tablet",
+      price: 499,
+    },
+  ];
+
   return (
     <div>
       <h2>Our Products</h2>
-      <div>
-        <h3>Laptop</h3>
-        <p>Price: $999</p>
-      </div>
-      <div>
-        <h3>Phone</h3>
-        <p>Price: $888</p>
-      </div>
-      <div>
-        <h3>Tablet</h3>
-        <p>Price: $499</p>
-      </div>
+      {products.map((products) => {
+        return (
+          <div>
+            <h3>{products.name}</h3>
+            <p>Price: ${products.price}</p>
+          </div>
+        );
+      })}
     </div>
   );
 };
